@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1503756234508-e32369269deb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80")no-repeat;
+    background-size: cover;
+}
+
+.clock{
+    width: 100%;
+    max-width: 370px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    height: 22vh;
+    border-radius: 13px;
+    padding: 20px;
+}
+
+.clock h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.clock span{
+    position: relative;
+    top: -13%;
+    margin-left: 6px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (min-width:260px) and (max-width:400px){
+    .clock{
+        max-width: 250px;
+        padding: 5px;
+    }
+    .clock h1{
+        font-size: 2.3rem;
+    }
+}
